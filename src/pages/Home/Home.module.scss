@@ -1,9 +1,13 @@
 .main {
   padding: 194px 0 0;
   position: relative;
-  height: calc(100vh + 100px);
+  height: calc(100vh + 170px);
 
   @media (max-width: 1200px) {
+    height: auto;
+  }
+
+  @media (max-height: 800px) {
     height: auto;
   }
 
@@ -24,6 +28,10 @@
     bottom: -50px;
     pointer-events: none;
 
+    @media (max-height: 800px) {
+      bottom: -192px;
+    }
+
     .cont {
       position: relative;
       z-index: -2;
@@ -41,7 +49,7 @@
         display: block;
         width: 100%;
         // height: calc(100vh + 50px);
-        height: calc(100vh);
+        height: calc(100vh + 70px);
         position: absolute;
         z-index: 1;
         top: 0;
@@ -104,6 +112,14 @@
       @media (max-width: 1200px) {
         img {
           width: 500px;
+          object-fit: contain;
+        }
+      }
+
+      @media (max-height: 800px) {
+        img {
+          right: -20px;
+          width: 550px;
           object-fit: contain;
         }
       }
@@ -215,6 +231,11 @@
 
   @media (max-width: 1200px) {
     margin: 100px 0 0;
+    padding: 0 0 50px;
+  }
+
+  @media (max-height: 800px) {
+    margin: 140px 0 0;
     padding: 0 0 50px;
   }
 

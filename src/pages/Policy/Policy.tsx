@@ -432,10 +432,10 @@ const PolicyHeader = () => {
     <div className={style.header}>
       <div className="container">
         <div className={style.headerBody}>
-          <div className={style.header__logo}>
+          <Link to="/" className={style.header__logo}>
             <ImgWebp src={logo} src2x={logo2x} srcWebp={logoWebp} />
             <span>SPORTS BROS</span>
-          </div>
+          </Link>
           <Link to={"/"} className={style.header__close}>
             {closeSvg()}
           </Link>
