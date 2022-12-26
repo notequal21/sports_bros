@@ -89,15 +89,17 @@ h6 {
 
 /* imports */
 @import url(@style/index.scss);
+@import "swiper/css";
 
 ::selection {
 }
 
 body {
-  // font-family: "Neue Machina";
-  // font-weight: 500;
-  // color: #1f1f1f;
-  // background: #f9d965;
+  font-family: "PolySans Trial";
+  font-weight: 300;
+  color: #fff;
+  background: #17171a;
+  overflow-x: hidden;
 
   &.lock {
     overflow: hidden;
@@ -105,15 +107,16 @@ body {
 }
 
 .container {
-  max-width: 0px; // <= enter here container width + (paddign * 2)
+  max-width: 1280px; // <= enter here container width + (paddign * 2)
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .content {

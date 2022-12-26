@@ -1,0 +1,57 @@
+.footer {
+  position: relative;
+  z-index: 5;
+
+  &Body {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      padding: 30px 0 50px;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      span {
+        margin: 0 0 0 10px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        color: #d1fa01;
+      }
+    }
+    &__text {
+      margin: 6px 0 0;
+    }
+    &__col {
+      flex: 0 0 400px;
+
+      @media (max-width: 992px) {
+        flex: 1 1 100%;
+        &:not(:first-child) {
+          margin: 40px 0 0;
+        }
+      }
+
+      &Title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        color: #d1fa01;
+      }
+      &Text {
+        margin: 11px 0 0;
+
+        a {
+          color: #b0b7c3;
+        }
+      }
+    }
+  }
+}

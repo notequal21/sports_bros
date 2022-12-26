@@ -1,0 +1,18 @@
+.swiper {
+  .swiper-slide {
+    border-radius: 8px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background: rgba($color: #2c2e38, $alpha: 0.5);
+    }
+
+    &.swiper-slide-thumb-active {
+      background: #2c2e38;
+    }
+
+    &.swiper-slide-active {
+      // background: #2c2e38;
+    }
+  }
+}

@@ -7,7 +7,9 @@
       "@style/*": ["style/*"],
       "@hooks/*": ["hooks/*"],
       "@helpers/*": ["helpers/*"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
+      "@img/*": ["assets/img/*"]
     }
   }
 }

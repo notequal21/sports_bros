@@ -11,6 +11,8 @@ module.exports = {
       "@hooks": path.resolve(__dirname, "src/hooks"),
       "@helpers": path.resolve(__dirname, "src/helpers"),
       "@pages": path.resolve(__dirname, "src/pages"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@img": path.resolve(__dirname, "src/assets/img"),
     },
   },
   jest: {

@@ -1,0 +1,136 @@
+.title {
+  font-family: "Nippo";
+  font-style: normal;
+  letter-spacing: 2px;
+
+  &_xl {
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 89px;
+
+    @media (max-width: 767px) {
+      font-size: 46px;
+      line-height: 64px;
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      padding: 0 10px;
+      color: #17171a;
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 5px;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        background: #d1f31f;
+      }
+    }
+  }
+  &_md {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  &_sm {
+    font-size: 32px;
+    line-height: 43px;
+
+    @media (max-width: 767px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+  &_xs {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &_polysans {
+    font-family: "PolySans Trial";
+  }
+  &_section {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -18px;
+      width: 60px;
+      height: 6px;
+      background: rgba(209, 250, 1, 0.98);
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &._right {
+      text-align: left;
+      &::after {
+        left: 0;
+        right: 0;
+        transform: translate(0);
+      }
+    }
+  }
+}
+
+.text {
+  letter-spacing: 1px;
+  color: #b0b7c3;
+  font-weight: 300;
+
+  &_md {
+    font-size: 16px;
+    line-height: 28px;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  &_sm {
+    font-size: 14px;
+    line-height: 22px;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+.link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #d1fa01;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

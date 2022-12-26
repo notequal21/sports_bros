@@ -1,7 +1,44 @@
-// @font-face {
-//   font-family: 'Neue Machina';
-//   font-display: swap;
-//   src: url("../assets/fonts/NeueMachina-Regular.woff2") format("woff2"), url("../assets/fonts/NeueMachina-Regular.woff") format("woff");
-//   font-weight: 400;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "PolySans Trial";
+  font-display: swap;
+  src: url("../assets/fonts/PolySans_Slim.woff2") format("woff2"),
+    url("../assets/fonts/PolySans_Slim.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PolySans Trial";
+  font-display: swap;
+  src: url("../assets/fonts/PolySans_Median.woff2") format("woff2"),
+    url("../assets/fonts/PolySans_Median.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PolySans Trial";
+  font-display: swap;
+  src: url("../assets/fonts/PolySans_Neutral.woff2") format("woff2"),
+    url("../assets/fonts/PolySans_Neutral.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PolySans Trial";
+  font-display: swap;
+  src: url("../assets/fonts/PolySans_Bulky.woff2") format("woff2"),
+    url("../assets/fonts/PolySans_Bulky.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nippo";
+  font-display: swap;
+  src: url("../assets/fonts/Nippo-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Nippo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
