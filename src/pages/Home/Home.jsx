@@ -1,77 +1,77 @@
-import { ImgWebp } from "@helpers/imgwebp";
-import style from "./Home.module.scss";
-import { useRef } from "react";
-import "./Slider.scss";
+import { ImgWebp } from '@helpers/imgwebp';
+import style from './Home.module.scss';
+import { useRef } from 'react';
+import './Slider.scss';
 
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper";
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Thumbs } from 'swiper';
 
-import mainBg from "@img/main/bg.png";
-import mainBg2x from "@img/main/bg@2x.png";
-import mainBgWebp from "@img/main/bg.webp";
-import mainPhone from "@img/main/phone.png";
-import mainPhone2x from "@img/main/phone@2x.png";
-import mainPhoneWebp from "@img/main/phone.webp";
-import logo from "@img/logo.png";
-import logo2x from "@img/logo@2x.png";
-import logoWebp from "@img/logo.webp";
-import google from "@img/main/google.png";
-import google2x from "@img/main/google@2x.png";
-import googleWebp from "@img/main/google.webp";
-import apple from "@img/main/apple.png";
-import apple2x from "@img/main/apple@2x.png";
-import appleWebp from "@img/main/apple.webp";
-import nfl from "@img/featured/nfl.png";
-import nfl2x from "@img/featured/nfl@2x.png";
-import nflWebp from "@img/featured/nfl.webp";
-import nba from "@img/featured/nba.png";
-import nba2x from "@img/featured/nba@2x.png";
-import nbaWebp from "@img/featured/nba.webp";
-import mlb from "@img/featured/mlb.png";
-import mlb2x from "@img/featured/mlb@2x.png";
-import mlbWebp from "@img/featured/mlb.webp";
-import nhl from "@img/featured/nhl.png";
-import nhl2x from "@img/featured/nhl@2x.png";
-import nhlWebp from "@img/featured/nhl.webp";
-import cfb from "@img/featured/cfb.png";
-import cfb2x from "@img/featured/cfb@2x.png";
-import cfbWebp from "@img/featured/cfb.webp";
-import featuredBg from "@img/featured/bg.png";
-import featuredBg2x from "@img/featured/bg@2x.png";
-import featuredBgWebp from "@img/featured/bg.webp";
-import featuredImg from "@img/featured/img.png";
-import featuredImg2x from "@img/featured/img@2x.png";
-import featuredImgWebp from "@img/featured/img.webp";
-import featuresBg from "@img/features/bg.png";
-import featuresBg2x from "@img/features/bg@2x.png";
-import featuresBgWebp from "@img/features/bg.webp";
-import featuresImg01 from "@img/features/img01.png";
-import featuresImg01_2x from "@img/features/img01@2x.png";
-import featuresImg01Webp from "@img/features/img01.webp";
-import featuresImg01Sub from "@img/features/subimg01.svg";
-import featuresImg02 from "@img/features/img02.png";
-import featuresImg02_2x from "@img/features/img02@2x.png";
-import featuresImg02Webp from "@img/features/img02.webp";
-import featuresImg02Sub from "@img/features/subimg02.png";
-import featuresImg02Sub2x from "@img/features/subimg02@2x.png";
-import featuresImg02SubWebp from "@img/features/subimg02.webp";
-import reviewsBg from "@img/reviews/bg.png";
-import reviewsBg2x from "@img/reviews/bg@2x.png";
-import reviewsBgWebp from "@img/reviews/bg.webp";
-import avatar01 from "@img/reviews/avatar01.png";
-import avatar01_2x from "@img/reviews/avatar01@2x.png";
-import avatar01Webp from "@img/reviews/avatar01.webp";
-import avatar02 from "@img/reviews/avatar02.png";
-import avatar02_2x from "@img/reviews/avatar02@2x.png";
-import avatar02Webp from "@img/reviews/avatar02.webp";
-import avatar03 from "@img/reviews/avatar03.png";
-import avatar03_2x from "@img/reviews/avatar03@2x.png";
-import avatar03Webp from "@img/reviews/avatar03.webp";
-import starSvg from "@img/icons/star.svg";
-import arrowSvg from "@img/icons/arrow";
-import quoteSvg from "@img/icons/quote.svg";
-import { Link } from "react-router-dom";
+import mainBg from '@img/main/bg.png';
+import mainBg2x from '@img/main/bg@2x.png';
+import mainBgWebp from '@img/main/bg.webp';
+import mainPhone from '@img/main/phone.png';
+import mainPhone2x from '@img/main/phone@2x.png';
+import mainPhoneWebp from '@img/main/phone.webp';
+import logo from '@img/logo.png';
+import logo2x from '@img/logo@2x.png';
+import logoWebp from '@img/logo.webp';
+import google from '@img/main/google.png';
+import google2x from '@img/main/google@2x.png';
+import googleWebp from '@img/main/google.webp';
+import apple from '@img/main/apple.png';
+import apple2x from '@img/main/apple@2x.png';
+import appleWebp from '@img/main/apple.webp';
+import nfl from '@img/featured/nfl.png';
+import nfl2x from '@img/featured/nfl@2x.png';
+import nflWebp from '@img/featured/nfl.webp';
+import nba from '@img/featured/nba.png';
+import nba2x from '@img/featured/nba@2x.png';
+import nbaWebp from '@img/featured/nba.webp';
+import mlb from '@img/featured/mlb.png';
+import mlb2x from '@img/featured/mlb@2x.png';
+import mlbWebp from '@img/featured/mlb.webp';
+import nhl from '@img/featured/nhl.png';
+import nhl2x from '@img/featured/nhl@2x.png';
+import nhlWebp from '@img/featured/nhl.webp';
+import cfb from '@img/featured/cfb.png';
+import cfb2x from '@img/featured/cfb@2x.png';
+import cfbWebp from '@img/featured/cfb.webp';
+import featuredBg from '@img/featured/bg.png';
+import featuredBg2x from '@img/featured/bg@2x.png';
+import featuredBgWebp from '@img/featured/bg.webp';
+import featuredImg from '@img/featured/img.png';
+import featuredImg2x from '@img/featured/img@2x.png';
+import featuredImgWebp from '@img/featured/img.webp';
+import featuresBg from '@img/features/bg.png';
+import featuresBg2x from '@img/features/bg@2x.png';
+import featuresBgWebp from '@img/features/bg.webp';
+import featuresImg01 from '@img/features/img01.png';
+import featuresImg01_2x from '@img/features/img01@2x.png';
+import featuresImg01Webp from '@img/features/img01.webp';
+import featuresImg01Sub from '@img/features/subimg01.svg';
+import featuresImg02 from '@img/features/img02.png';
+import featuresImg02_2x from '@img/features/img02@2x.png';
+import featuresImg02Webp from '@img/features/img02.webp';
+import featuresImg02Sub from '@img/features/subimg02.png';
+import featuresImg02Sub2x from '@img/features/subimg02@2x.png';
+import featuresImg02SubWebp from '@img/features/subimg02.webp';
+import reviewsBg from '@img/reviews/bg.png';
+import reviewsBg2x from '@img/reviews/bg@2x.png';
+import reviewsBgWebp from '@img/reviews/bg.webp';
+import avatar01 from '@img/reviews/avatar01.png';
+import avatar01_2x from '@img/reviews/avatar01@2x.png';
+import avatar01Webp from '@img/reviews/avatar01.webp';
+import avatar02 from '@img/reviews/avatar02.png';
+import avatar02_2x from '@img/reviews/avatar02@2x.png';
+import avatar02Webp from '@img/reviews/avatar02.webp';
+import avatar03 from '@img/reviews/avatar03.png';
+import avatar03_2x from '@img/reviews/avatar03@2x.png';
+import avatar03Webp from '@img/reviews/avatar03.webp';
+import starSvg from '@img/icons/star.svg';
+import arrowSvg from '@img/icons/arrow';
+import quoteSvg from '@img/icons/quote.svg';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -107,16 +107,16 @@ const MainSection = () => {
               vestibulum tellus tellus.
             </div>
             <div className={style.mainBody__download}>
-              <a href="./" className={style.mainBody__downloadItem}>
+              <a href='./' className={style.mainBody__downloadItem}>
                 <ImgWebp src={google} src2x={google2x} srcWebp={googleWebp} />
               </a>
-              <a href="./" className={style.mainBody__downloadItem}>
+              <a href='./' className={style.mainBody__downloadItem}>
                 <ImgWebp src={apple} src2x={apple2x} srcWebp={appleWebp} />
               </a>
             </div>
             <div className={style.mainBody__privacy}>
               or see
-              <Link to={"policy"} className="link">
+              <Link to={'policy'} className='link'>
                 Privacy Policy
               </Link>
             </div>
@@ -137,7 +137,7 @@ const MainSection = () => {
 
 const FeaturedSection = () => {
   return (
-    <section className={style.featured} id="games">
+    <section className={style.featured} id='games'>
       <div className={style.featured__bg}>
         <ImgWebp
           src={featuredBg}
@@ -145,7 +145,7 @@ const FeaturedSection = () => {
           srcWebp={featuredBgWebp}
         />
       </div>
-      <div className="container">
+      <div className='container'>
         <div
           className={`${style.featured__title} title title_sm title_section _right`}
         >
@@ -219,7 +219,7 @@ const FeaturedSection = () => {
 
 const FeaturesSection = () => {
   return (
-    <div className={style.features} id="features">
+    <div className={style.features} id='features'>
       <div className={style.features__bg}>
         <ImgWebp
           src={featuresBg}
@@ -227,7 +227,7 @@ const FeaturesSection = () => {
           srcWebp={featuresBgWebp}
         />
       </div>
-      <div className="container">
+      <div className='container'>
         <div
           className={`${style.features__title} title title_md title_section`}
         >
@@ -239,12 +239,10 @@ const FeaturesSection = () => {
               <div
                 className={`${style.featuresBody__textTitle} title title_sm`}
               >
-                Bet Your Favorite Team 👑
+                Bet On Your Favorite Team 👑
               </div>
               <div className={`${style.featuresBody__textText} text text_md`}>
-                Lorem ipsum dolor sit amet consectetur. Phasellus sit
-                pellentesque id massa. Quam elementum dignissim justo egestas
-                massa congue feugiat amet vel. Laoreet vel amet mattis donec.
+                Show support for the teams you love by betting on them to win!
               </div>
             </div>
             <div className={style.featuresBody__img}>
@@ -256,7 +254,7 @@ const FeaturesSection = () => {
                 />
               </div>
               <div className={style.featuresBody__imgSub}>
-                <img src={featuresImg01Sub} alt="" />
+                <img src={featuresImg01Sub} alt='' />
               </div>
             </div>
           </div>
@@ -268,9 +266,8 @@ const FeaturesSection = () => {
                 Trash Talk with Your Friends 😈
               </div>
               <div className={`${style.featuresBody__textText} text text_md`}>
-                Lorem ipsum dolor sit amet consectetur. Phasellus sit
-                pellentesque id massa. Quam elementum dignissim justo egestas
-                massa congue feugiat amet vel. Laoreet vel amet mattis donec.
+                Have fun with your friends by talking about your favorite teams,
+                players and matchups!
               </div>
             </div>
             <div className={style.featuresBody__img}>
@@ -303,30 +300,30 @@ const ReviewsSection = () => {
   const navigationNextRef = useRef(null);
 
   return (
-    <div className={style.reviews} id="reviews">
+    <div className={style.reviews} id='reviews'>
       <div className={style.reviews__bg}>
         <ImgWebp src={reviewsBg} src2x={reviewsBg2x} srcWebp={reviewsBgWebp} />
       </div>
-      <div className="container">
+      <div className='container'>
         <div
           className={`${style.reviews__title} title title_md  title_section`}
         >
-          What Do They Say?
+          What Are People Saying
         </div>
         <div className={style.reviewsBody}>
           <div className={style.reviewsBody__list}>
             <div className={style.reviewsBody__listQuote}>
-              <img src={quoteSvg} alt="" />
+              <img src={quoteSvg} alt='' />
             </div>
 
             <Swiper
               onSwiper={setThumbsSwiper}
               spaceBetween={8}
-              slidesPerView={"auto"}
+              slidesPerView={'auto'}
               watchSlidesProgress={true}
-              direction="vertical"
+              direction='vertical'
               modules={[Navigation, Thumbs]}
-              className="mySwiper"
+              className='mySwiper'
               llowTouchMove={false}
               cssMode={true}
             >
@@ -389,7 +386,7 @@ const ReviewsSection = () => {
                     <div
                       className={`${style.reviewsBody__itemName} title title_xs title_polysans`}
                     >
-                      Leslie Alexander{" "}
+                      Leslie Alexander{' '}
                     </div>
                     <div
                       className={`${style.reviewsBody__itemPos} text text_sm`}
@@ -446,19 +443,19 @@ const ReviewsSection = () => {
                   </div>
                   <div className={style.reviewRating}>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                   </div>
                   <div className={`${style.review__text} text text_md`}>
@@ -500,19 +497,19 @@ const ReviewsSection = () => {
                   </div>
                   <div className={style.reviewRating}>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                   </div>
                   <div className={`${style.review__text} text text_md`}>
@@ -538,7 +535,7 @@ const ReviewsSection = () => {
                       <div
                         className={`${style.reviewsBody__itemName} title title_xs title_polysans`}
                       >
-                        Leslie Alexander{" "}
+                        Leslie Alexander{' '}
                       </div>
                       <div
                         className={`${style.reviewsBody__itemPos} text text_sm`}
@@ -554,19 +551,19 @@ const ReviewsSection = () => {
                   </div>
                   <div className={style.reviewRating}>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                     <div className={style.reviewRating__item}>
-                      <img src={starSvg} alt="" />
+                      <img src={starSvg} alt='' />
                     </div>
                   </div>
                   <div className={`${style.review__text} text text_md`}>
