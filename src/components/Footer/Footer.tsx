@@ -25,8 +25,8 @@ const Footer = () => {
             <div className={`${style.footerBody__colText} text text_sm`}>
               Sports Bros Holdings, LLC, 320 Gold Ave. SW Ste. 620 PMB 2502
               <br />
-              <a href='mailto:General@sportsbrosapp.com'>
-                General@sportsbrosapp.com
+              <a href='mailto:general@sportsbrosapp.com'>
+                general@sportsbrosapp.com
               </a>
             </div>
           </div>

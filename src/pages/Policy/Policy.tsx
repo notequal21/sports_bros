@@ -1,19 +1,19 @@
-import { ImgWebp } from "@helpers/imgwebp";
-import style from "./Policy.module.scss";
+import { ImgWebp } from '@helpers/imgwebp';
+import style from './Policy.module.scss';
 
 // imgs
-import logo from "@img/logo.png";
-import logo2x from "@img/logo@2x.png";
-import logoWebp from "@img/logo.webp";
-import closeSvg from "@img/icons/CrossSvg";
-import { Link } from "react-router-dom";
+import logo from '@img/logo.png';
+import logo2x from '@img/logo@2x.png';
+import logoWebp from '@img/logo.webp';
+import closeSvg from '@img/icons/CrossSvg';
+import { Link } from 'react-router-dom';
 
 const PolicyPage = () => {
   return (
     <>
       <PolicyHeader />
       <div className={style.policy}>
-        <div className="container">
+        <div className='container'>
           <div
             className={`${style.policy__title} title title_sm title_section`}
           >
@@ -415,8 +415,8 @@ const PolicyPage = () => {
             <ul>
               <li>
                 By email:
-                <a href="mailto:sportsbrosofficial22@gmail.com">
-                  sportsbrosofficial22@gmail.com
+                <a href='mailto:general@sportsbrosapp.com'>
+                  general@sportsbrosapp.com
                 </a>
               </li>
             </ul>
@@ -430,13 +430,13 @@ const PolicyPage = () => {
 const PolicyHeader = () => {
   return (
     <div className={style.header}>
-      <div className="container">
+      <div className='container'>
         <div className={style.headerBody}>
-          <Link to="/" className={style.header__logo}>
+          <Link to='/' className={style.header__logo}>
             <ImgWebp src={logo} src2x={logo2x} srcWebp={logoWebp} />
             <span>SPORTS BROS</span>
           </Link>
-          <Link to={"/"} className={style.header__close}>
+          <Link to={'/'} className={style.header__close}>
             {closeSvg()}
           </Link>
         </div>

@@ -101,15 +101,15 @@ const MainSection = () => {
             <div className={`${style.mainBody__title} title title_xl`}>
               Play Your <span>Game</span> <br /> Play With Us
             </div>
-            <div className={`${style.mainBody__text} text text_md`}>
+            {/* <div className={`${style.mainBody__text} text text_md`}>
               Lorem ipsum dolor sit amet consectetur. Interdum ut lorem morbi
               porttitor amet suspendisse. Sed nec risus mattis egestas
               vestibulum tellus tellus.
-            </div>
+            </div> */}
             <div className={style.mainBody__download}>
-              <a href='./' className={style.mainBody__downloadItem}>
+              {/* <a href='./' className={style.mainBody__downloadItem}>
                 <ImgWebp src={google} src2x={google2x} srcWebp={googleWebp} />
-              </a>
+              </a> */}
               <a href='./' className={style.mainBody__downloadItem}>
                 <ImgWebp src={apple} src2x={apple2x} srcWebp={appleWebp} />
               </a>
